@@ -1,0 +1,256 @@
+.josefin-sans-light {
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .josefin-sans-regular {
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .josefin-sans-semiBold {
+    font-family: "Josefin Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(0, 36%, 70%);
+  }
+
+  .header-mobile {
+    display: none;
+  }
+
+  .apparel-page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 200px;
+    margin-bottom: 10%;
+  }
+
+  .content {
+    grid-column: 1 / 3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25%;
+    padding-bottom: 25%;
+  }
+
+  .coming-soon-text {
+    margin-bottom: 30px;
+    font-size: 6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+  }
+
+  .coming-soon-text span {
+    color: hsl(0, 6%, 24%);
+    font-weight: 400;
+  }
+
+  .message {
+    width: 100%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .email-address-field-container {
+    position: relative;
+  }
+
+  .email-address-field-container input[type=text] {
+    width: 100%;
+    padding: 20px 40px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+    border: 2px solid hsl(0, 0%, 87%);
+    border-radius: 50px;
+  }
+
+  .email-address-field-container input[type=text]:focus {
+    outline: none;
+  }
+
+  .email-address-field-container input[type=text]::placeholder {
+    color: hsl(0, 36%, 70%);
+  }
+
+  .email-address-field-container button {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 100px;
+    aspect-ratio: 1;
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: none;
+    border-radius: 50px;
+  }
+
+  .email-address-field-container button:hover {
+    background-image: none;
+    background-color: hsl(0, 80%, 86%);
+  }
+
+  .email-address-error {
+    margin-left: 40px;
+    color: hsl(0, 93%, 68%);
+  }
+
+  .hero-img {
+    grid-column: 4;
+  }
+
+  .hero-img img {
+    height: 100%;
+  }
+
+  footer {
+    display: block;
+    height: 100%;
+  }
+
+  /*Small and mobile screens*/
+  @media (max-width: 768px) {
+    .hero-img {
+      display: none;
+    }
+
+    .header{
+      display: none;
+    }
+
+    body {
+      font-size: 16px;
+    }
+
+    .apparel-page {
+      grid-template-columns: 1fr;
+      height: 100%;
+    }
+
+    .header-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .logo-mobile {
+      padding: 2rem 3rem;
+    }
+
+    .hero-mobile {
+      width: 100%;
+      height: 100%;
+    }
+
+    .content {
+      margin: 0;
+      padding: 5em 30px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .coming-soon-text {
+      font-size: 3.5rem;
+    }
+
+    .message {
+      width: 100%;
+      margin-bottom: 50px;
+      font-size: 16px;
+    }
+
+    .coming-soon-text span {
+      font-weight: 600;
+    }
+
+    .email-address-field-container {
+      width: 90%;
+    }
+
+    .email-address-field-container input[type=text]::placeholder {
+      font-size: 16px;
+    }
+  }
+
+  /*Tablets and Laptops screen*/
+  @media (max-width: 1200px) and (min-width: 768px) {
+    .hero-img {
+      display: none;
+    }
+
+    .header{
+      display: none;
+    }
+
+    .apparel-page {
+      grid-template-columns: 1fr;
+      height: 100%;
+    }
+
+    .header-mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .logo-mobile {
+      padding: 2rem 3rem;
+    }
+
+    .hero-mobile {
+      width: 100%;
+      height: 100%;
+    }
+
+    .content {
+      margin: 0;
+      padding: 5em 30px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .coming-soon-text {
+      font-size: 7rem;
+    }
+
+    .message {
+      width: 100%;
+      margin-bottom: 50px;
+      font-size: 25px;
+    }
+
+    .coming-soon-text span {
+      font-weight: 600;
+    }
+
+    .email-address-field-container {
+      width: 90%;
+    }
+  }
